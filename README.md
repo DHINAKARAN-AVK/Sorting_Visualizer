@@ -2,7 +2,7 @@
 
 This is a sorting visualizer built with React that allows you to visualize various sorting algorithms in action.
 
-![Sorting Visualizer Demo](https://dhinakaran-avk.github.io/Sorting_Visualizer/)
+Sorting Visualizer Demo:https://dhinakaran-avk.github.io/Sorting_Visualizer/
 
 ## Features
 
@@ -76,4 +76,4 @@ This project is licensed under the MIT License.
 vbnet
 
 
-Feel free to customize the content further based on your project's specs .just let me know
+Feel free to customize the content further based on your project's specs .just let me knoe
