@@ -1,16 +1,20 @@
+/* Container for sorting bars */
 .array-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
+/* Styling for individual bars in the sorting visualization */
 .array-bar {
   width: 2px;
   display: inline-block;
   margin: 0 1px;
   background-color: #46a4e3; /* Dodger Blue */
+  transition: height 0.3s ease-in-out; /* Smooth animation for sorting */
 }
 
+/* Button container */
 .button-container {
   padding: 15px;
   display: flex;
@@ -19,27 +23,31 @@
   width: 100%;
   height: 70px;
   margin-bottom: 5px;
-  background-color:#34495e; 
+  background-color: #34495e; /* Dark Blue-Grey */
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Buttons inside the container */
 .button-container button {
-  
-  padding: 10px;
+  padding: 10px 15px;
   font-size: 14px;
-  color: #393636;
-  background-color: #9a9a9a; /* Alizarin Crimson */
+  font-weight: bold;
+  color: #ffffff; /* White text for better contrast */
+  background-color: #9a9a9a; /* Neutral grey */
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
+/* Hover effect for buttons */
 .button-container button:hover {
-  background-color: #46a4e3; 
+  background-color: #46a4e3; /* Dodger Blue */
+  transform: scale(1.05); /* Slight pop effect */
 }
 
+/* Speed and Size Control Containers */
 .speed-container,
 .size-container {
   display: flex;
@@ -47,18 +55,52 @@
   margin: 0 10px;
 }
 
+/* Labels for range inputs */
 label {
   margin-right: 10px;
   font-weight: bold;
-  color: #ededed; /* Midnight Blue */
+  color: #ededed; /* Light Gray */
 }
 
+/* Styled Range Sliders */
 input[type="range"] {
-  width: 100px;
-  margin-right: 10px;
+  -webkit-appearance: none;
+  width: 120px;
+  height: 6px;
+  background: #46a4e3;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
 }
 
+/* Chrome/Safari slider thumb styling */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #f31212; /* Red Thumb */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* Hover effect on slider thumb */
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Firefox slider thumb */
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #f31212;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Text styling */
 span {
   font-size: 14px;
+  font-weight: bold;
   color: #2c3e50; /* Midnight Blue */
 }

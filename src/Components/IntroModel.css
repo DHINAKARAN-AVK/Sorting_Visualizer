@@ -1,58 +1,77 @@
-/* IntroModal.css */
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 
+/* Styling for the modal container */
 .intro-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
- 
-  img {
-    width: 300px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
-  }
-  
-  .modal-content {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    text-align: center;
-    width: 700px;
-    height: 400px;
-    overflow-y: auto;
-    position: relative;
-  }
-  
-  .modal-content h2 {
-    color: #3498db;
-  }
-  
-  .modal-content p {
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .modal-content button {
-    background: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-  }
-  
-  .modal-content button:hover {
-    background: #2980b9;
-  }
-  
+    position: fixed; /* Keeps the modal in place while scrolling */
+    top: 0; /* Aligns the modal to the top of the viewport */
+    left: 0; /* Aligns the modal to the left of the viewport */
+    width: 100%; /* Makes modal full width */
+    height: 100%; /* Makes modal full height */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    display: flex; /* Enables flexbox for centering content */
+    justify-content: center; /* Centers modal horizontally */
+    align-items: center; /* Centers modal vertically */
+}
+
+/* Styling for the modal content box */
+.modal-content {
+    background: #fff; /* White background for the modal */
+    border-radius: 12px; /* Rounded corners for a smooth look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+    padding: 30px; /* Adds space inside the modal */
+    text-align: center; /* Centers all text inside the modal */
+    width: 900px; /* Sets the modal width */
+    height: 600px; /* Sets the modal height */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+    position: relative; /* Positions elements relative to this box */
+}
+
+/* Styling for modal headings using Protest Revolution font */
+.modal-content h2 {
+    color: #d7263d; /* Deep red for a bold and striking look */
+    font-size: 32px; /* Large font size for headings */
+    margin-bottom: 15px; /* Adds spacing below the heading */
+    font-family: 'Protest Revolution', sans-serif; /* Applies the selected font */
+    font-weight: bold; /* Ensures the heading is bold */
+}
+
+/* Styling for images inside the modal */
+.modal-content img {
+    width: 400px; /* Sets a fixed width for images */
+    height: 260px; /* Sets a fixed height for images */
+    border-radius: 10px; /* Rounds the edges slightly */
+    margin-bottom: 20px; /* Adds space below images */
+}
+
+/* Styling for paragraph text using Walter Turncoat font */
+.modal-content p {
+    color: #222; /* Dark color for better readability */
+    font-size: 22px; /* Slightly larger font size for better visibility */
+    line-height: 1.5; /* Increases space between lines for readability */
+    margin-bottom: 25px; /* Adds space below paragraphs */
+    font-family: 'Walter Turncoat', cursive; /* Applies the selected font */
+    font-weight: 400; /* Normal weight to match the font style */
+    text-shadow: none; /* Ensures no text shadow is applied */
+}
+
+/* Styling for the button inside the modal */
+.modal-content button {
+    background: #f31212; /* Bright red button background */
+    color: #fff; /* White text for contrast */
+    border: none; /* Removes default border */
+    padding: 12px 25px; /* Adds spacing inside the button */
+    font-size: 18px; /* Medium font size for better visibility */
+    cursor: pointer; /* Changes cursor to pointer when hovering */
+    border-radius: 6px; /* Slightly rounded button corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    position: absolute; /* Positions the button inside the modal */
+    bottom: 30px; /* Positions button 30px from the bottom */
+    right: 30px; /* Positions button 30px from the right */
+}
+
+/* Styling for button hover effect */
+.modal-content button:hover {
+    background: #65f406; /* Bright green background on hover */
+}

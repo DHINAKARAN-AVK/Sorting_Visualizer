@@ -2,7 +2,7 @@
 
 This is a sorting visualizer built with React that allows you to visualize various sorting algorithms in action.
 
-![Sorting Visualizer Demo](https://dhinakaran-avk.github.io/Sorting_Visualizer/)
+Sorting Visualizer Demo:https://dhinakaran-avk.github.io/Sorting_Visualizer/
 
 ## Features
 
